@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internet</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-image: url("Minecrafv.jpg.jpg");
+            background-size: cover;
+            background-position: right;
+            color: white;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="titulo" style="color: red;">
+        ¡Bienvenidos a internet La Reforma!
+    </h1>
+
+    <p id="titulo" style="color: blue;">Pagina promocional.</p>
+
+    <img src="Perro.jpg.jpg" alt="Mi imagen" width="300">
+
+    <br><br>
+
+    <video width="300" controls>
+        <source src="video.mp4.mp4" type="video/mp4">
+    </video>
+
+    <br><br>
+
+    <button onclick="alert('¡Copias, investigaciones, trabajos y mucho mas los esperamos.!')">
+        Presióname
+    </button>
+
+    <script>
+        const colores = ["red", "blue", "yellow", "green", "purple"];
+
+        let i = 0;
+
+        setInterval(() => {
+            document.getElementById("titulo").style.color = colores[i];
+            i = (i + 1) % colores.length;
+        }, 1000);
+    </script>
+
+</body>
+</html>
